@@ -1,0 +1,297 @@
+:root{
+    --main-color: #fcb731;
+    --gray : #ebebeb;
+    --black: #23282d;
+}
+
+/* font Size */
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-25{
+    font-size: 25px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.fs-35{
+    font-size: 35px;
+}
+
+.fs-40{
+    font-size: 40px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-60{
+    font-size: 60px;
+}
+
+.text-black{
+    color: black;
+}
+
+.btn-con{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.btn-con:hover{
+    background-color: #000;
+    color: var(--main-color);
+}
+
+.btn-con-outline {
+    background-color: transparent;
+    color: #fff;
+    transition: .5s;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+}
+
+.btn-con-outline:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+.bg-gray{
+    background-color: var(--gray);
+
+}
+
+.bg-black{
+    background-color: var(--black) !important;
+}
+
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--main-color);
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.nav-item:nth-child(1){
+    margin-left: 0px;
+}
+
+.nav-icon{
+    width: 50px;
+}
+
+.nav-icon span{
+    width: 100%;
+    display: inline-block;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-content h3{
+    font-weight: 200;
+    word-spacing: 10px;
+}
+
+.banner-content h2{
+    font-size: 3.5em !important;
+    font-weight: 900;
+    word-spacing: 10px;
+    margin: 20px 0;
+}
+
+.carousel-indicators button{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+    border: 3px solid var(--main-color) !important;
+    background-color: transparent !important;
+}
+
+
+.carousel-indicators .active{
+    background-color: var(--main-color) !important;
+}
+
+.carousel-indicators{
+    bottom:60px !important;
+}
+
+.push-up{
+    /* position: relative;
+    top: -50px; */
+    transform: translateY(-50%)
+}
+
+.about h6{
+    font: size 25px;
+    line-height: 20px !important;
+}
+
+.c-p{
+    cursor: pointer;
+}
+
+.project{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.project> img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project> .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.project> .pob{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--main-color);
+    border-radius: 0;
+    font-size: 25px;
+    padding: auto !important;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transition: .3s;
+}
+
+.project .pib{
+    background-color: var(--main-color);
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px !important;
+}
+
+.project > .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, 0%);
+    transition: .4s;
+    opacity: 0;
+}
+
+.project:hover>img{
+    transform: scale(1.05);
+}
+
+.project:hover> .overlay{
+    opacity: 1;
+}
+
+.project:hover> .pob{
+   transform: scale(1);
+   opacity: 1;
+}
+
+.project:hover> .content{
+    transform: translate(-50%, -50%);
+   
+    opacity: 1;
+}
+
+.content > h4{
+    color: #ebebeb;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.content > h4:hover{
+    color:var(--main-color);
+}
+
+.newslatter{
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.newslatter .left{
+    background-color: var(--main-color);
+   
+}
+
+
+.newslatter .right{
+    background-color:#333;
+    position: relative;
+}
+
+.newslatter .right::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color:inherit;
+    top: 0;
+    left: 99%;
+}
